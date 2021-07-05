@@ -44,3 +44,7 @@ driver.implicitly_wait(10)
 print("current page after redirection 2:" + driver.title)
 driver.back()
 driver.implicitly_wait(10)
+#click on the logo for home page
+driver.find_element_by_xpath("//body/div[7]").click()
+print(driver.current_url)
+
