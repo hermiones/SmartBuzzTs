@@ -48,3 +48,25 @@ driver.implicitly_wait(10)
 driver.find_element_by_xpath("//body/div[7]").click()
 print(driver.current_url)
 
+
+#click on google play
+driver.find_element_by_xpath("//body/div[1]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/a[1]/img[1]").click()
+print(driver.title)
+driver.back()
+#click on appstore
+driver.find_element_by_xpath("//body/div[1]/main[1]/section[1]/div[1]/div[1]/div[2]/div[1]/a[2]/img[1]").click()
+print(driver.title)
+driver.back()
+#Slide the carousel
+driver.find_element_by_xpath("//body/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/button[2]/*[1]").click()
+driver.find_element_by_xpath("//a[contains(text(),'View All')]").click()
+driver.back()
+  #open demat account form
+
+driver.find_element_by_id("demat-name").send_keys("Sudipta")
+driver.find_element_by_id("demat-mobile").send_keys("7044787128")
+driver.find_element_by_id("demat-city").send_keys("Bally,Howrah")
+
+
+
+
