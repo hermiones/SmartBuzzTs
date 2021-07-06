@@ -66,6 +66,7 @@ driver.back()
 driver.find_element_by_id("demat-name").send_keys("Sudipta")
 driver.find_element_by_id("demat-mobile").send_keys("7044787128")
 driver.find_element_by_id("demat-city").send_keys("Bally,Howrah")
+driver.find_element_by_xpath("//button[contains(text(),'Open Account')]").click()
 
 
 
